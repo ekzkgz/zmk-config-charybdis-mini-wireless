@@ -70,9 +70,6 @@
             key-positions = <17 18>;
         };
 
-        scrollOn {
-            binding = 
-        };
     };
 
     behaviors {
