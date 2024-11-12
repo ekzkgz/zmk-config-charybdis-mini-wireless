@@ -69,6 +69,10 @@
             bindings = <&caps_word>;
             key-positions = <17 18>;
         };
+
+        scrollOn {
+            binding = 
+        };
     };
 
     behaviors {
@@ -107,8 +111,8 @@
         BASE {
             bindings = <
 &kp ESC    &kp Q             &kp W             &kp E          &kp R               &kp T    &kp Y  &kp U                &kp I          &kp O              &kp P                 &kp BSPC
-&kp TAB    &u_mt LEFT_GUI A  &u_mt LEFT_ALT S  &u_mt LCTRL D  &u_mt LEFT_SHIFT F  &kp G    &kp H  &u_mt RIGHT_SHIFT J  &u_mt RCTRL K  &u_mt RIGHT_ALT L  &u_mt RIGHT_GUI SEMI  &kp APOS
-&kp LSHIFT &kp Z             &kp X             &kp C          &kp V               &kp B    &kp N  &kp M                &kp COMMA      &kp DOT            &kp FSLH              &mo 5
+&kp TAB    &kp A             &kp S             &kp D          &u_mt LEFT_SHIFT F  &kp G    &kp H  &u_mt RIGHT_SHIFT J  &kp K          &kp L              &kp SEMI              &kp APOS
+&kp LSHIFT &lt 5 Z             &kp X             &kp C          &kp V               &kp B    &kp N  &kp M                &kp COMMA      &kp DOT            &kp FSLH              &mo 5
                                                &kp LCTRL      &kp RET             &mo 2    &mo 1  &kp SPACE
             >;
         };
@@ -117,7 +121,7 @@
             bindings = <
 &bt BT_CLR_ALL &none     &none         &none      &none  &none    &none         &kp PAGE_UP           &none          &none      &none    &kp K_VOLUME_UP
 &none          &kp LCTRL &kp LEFT_ALT  &kp LGUI   &none  &none    &kp LEFT      &kp DOWN              &kp UP         &kp RIGHT  &none    &kp K_MUTE
-&none          &none     &none         &none      &none  &none    &none         &kp PAGE_DOWN         &none          &none      &none    &kp K_VOLUME_DOWN
+&trans         &none     &none         &none      &none  &none    &none         &kp PAGE_DOWN         &none          &none      &none    &kp K_VOLUME_DOWN
                                        &trans     &trans &trans   &trans        &trans
             >;
         };
